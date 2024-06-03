@@ -5,8 +5,11 @@
 }
 .img{
 	width:200px;
-	height:350px;
+	/* height:350px; */
 	object-fit:contain;
+	position:absolute;
+	/* position:top; */
+	/* position:left; */
 }
 
 .skills{
@@ -18,15 +21,26 @@
 .container{
 	display:grid;
 	grid-template-columns:1fr 1fr;
+	
 }
 
 .left{
-	display:grid;
-	justify-self:left;
+	position:relative;
 }
 .profile{
 	display:grid;
 	grid-template-columns:1fr 1fr;
+}
+
+.pad{
+	padding:5px;
+	/* text-align:center; */
+	text-decoration:none;
+	text-transform:capitalize;
+	font-size:1.5rem;
+	font-weight:bold;
+	color:green;
+	
 }
 
 body {
@@ -40,7 +54,7 @@ body {
 .skills-section {
     width: 80%;
     max-width: 800px;
-    margin: 50px auto;
+    margin: 150px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
